@@ -101,25 +101,36 @@ void printArt(unsigned char* img, unsigned long width, unsigned long height, uns
 }
 
 int main(int argc, char** argv) {
-  if (argc < 4) {
-    printf("Usage: %s <svg> <w> <h>\n", argv[0]);
+  struct NSVGimage* image;
+  unsigned long w, h;
+  if (argc < 2) {
+    printf("Usage: %s <svg> [<width> [<height>]]\n", argv[0]);
     return 1;
   }
-  struct NSVGimage* image;
   image = nsvgParseFromFile(argv[1], "px", 96);
   if (image == NULL) {
     printf("Error loading image %s\n", argv[1]);
     return 1;
   }
-  unsigned long w = atoi(argv[2]);
-  unsigned long h = atoi(argv[3]);
+  if (argc < 3) {
+    w = image->width;
+  } else {
+    w = atoi(argv[2]);
+  }
+  if (argc < 4) {
+    h = image->height;
+  } else {
+    h = atoi(argv[3]);
+  }
+   
   unsigned char* img = new unsigned char[w*h*4];
   // Rasterize
-  float scale = ((float)w)/image->width;
+  float scalex = ((float)w)/image->width;
+  float scaley = ((float)h)/image->height;
   NSVGrasterizer* rast = nsvgCreateRasterizer();
-  nsvgRasterize(rast, image, 0,0,scale, img, w, h, w*4);
+  nsvgRasterizeStretched(rast, image, 0,0,scalex, scaley, img, w, h, w*4);
   nsvgDeleteRasterizer(rast);
-  printArt(img, image->width * scale, image->height * scale, w, h);
+  printArt(img, image->width * scalex, image->height * scaley, w, h);
   delete[] img;
   return 0;
 }
