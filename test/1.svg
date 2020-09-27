@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="1.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   shape-rendering="crispEdges"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 26.458333 26.458334"
+   height="100"
+   width="100"
+   inkscape:export-filename="/home/soro/Pictures/Mushrooms/color2.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:lockguides="true"
+     inkscape:window-maximized="0"
+     inkscape:window-y="27"
+     inkscape:window-x="0"
+     inkscape:window-height="1023"
+     inkscape:window-width="1444"
+     units="in"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="57.283916"
+     inkscape:cx="38.489876"
+     inkscape:zoom="5.6568542"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <rect
+       style="opacity:0.998134;fill:#ffffff;stroke:none;stroke-width:0.264583"
+       id="rect850"
+       width="28.10638"
+       height="28.166376"
+       x="-1.0521168"
+       y="-0.20758857" />
+    <path
+       style="fill:#00ffff;stroke:none;stroke-width:0.372019px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 0.54630024,8.9463748 C 12.063782,5.3093004 19.46357,6.6359179 25.871958,7.1442375 23.975029,4.3715462 16.460554,0.09785303 12.409723,0.68544297 7.8530498,1.6002842 3.8814478,4.3016289 0.54630024,8.9463748 Z"
+       id="path846"
+       sodipodi:nodetypes="cccc" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path18"
+       d="M 25.871958,7.1442378 C 20.210069,12.021848 4.5247831,11.575749 0.54630024,8.9463748"
+       style="fill:none;stroke:#f6ff05;stroke-width:0.372019px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path22"
+       d="m 11.248565,8.9910836 c 0,0 -2.4679396,15.4392344 -1.5246054,16.3341944 C 10.667293,26.220239 14.90741,26.247329 16.1971,25.67625 17.486791,25.105169 14.41845,8.9080664 14.41845,8.9080664"
+       style="fill:#800000;stroke:none;stroke-width:0.372019px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path24"
+       d="M 11.248565,8.9910836 8.8657279,10.720758"
+       style="fill:none;stroke:#f6ff05;stroke-width:0.372019px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="ccc"
+       id="path26"
+       d="M 6.6835589,7.3169585 11.248565,8.9910836 3.2529307,10.050955"
+       style="fill:none;stroke:#f6ff05;stroke-width:0.372019px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path30"
+       d="m 11.403597,6.5360308 1.204478,2.2935041"
+       style="fill:none;stroke:#f6ff05;stroke-width:0.372019px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="ccc"
+       id="path32"
+       d="M 16.39891,6.5100326 14.41845,8.9080664 23.232105,6.5420839"
+       style="fill:none;stroke:#f6ff05;stroke-width:0.372019px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path34"
+       d="m 14.41845,8.9080664 5.141514,1.0553463"
+       style="fill:none;stroke:#f6ff05;stroke-width:0.372019px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+</svg>
