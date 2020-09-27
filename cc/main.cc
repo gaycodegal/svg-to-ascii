@@ -136,7 +136,7 @@ int main(int argc, char** argv) {
   NSVGrasterizer* rast = nsvgCreateRasterizer();
   nsvgRasterizeStretched(rast, image, 0,0,scalex, scaley, img, w, h, w*4);
   nsvgDeleteRasterizer(rast);
-  printArt(img, image->width * scalex, image->height * scaley);
+  printArt(img, w, h);
   delete[] img;
   return 0;
 }
