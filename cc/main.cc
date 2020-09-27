@@ -126,7 +126,11 @@ int main(int argc, char** argv) {
   
   if (argc < 4) {
     scaley = scalex;
-    h = scaley*image->height;
+    if (image->width == image->height) {
+      h = w;
+    } else {
+      h = scaley*image->height;
+    }
   } else {
     h = atoi(argv[3]);
     scaley = ((float)h)/image->height;
