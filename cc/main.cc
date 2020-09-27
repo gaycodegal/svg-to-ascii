@@ -63,9 +63,10 @@ void calcWeit(unsigned char* rgbaImage, unsigned long widthStride, Rect rect, un
   b = (unsigned char)sb;
 }
 
-void printArt(unsigned char* img, unsigned long width, unsigned long height, unsigned long w, unsigned long h2) {
+void printArt(unsigned char* img, unsigned long width, unsigned long height) {
   const std::string ASCII = " @B#Q80Rg&D$OEN9bd6MHWA%GpPSq5UZ4K3hXkfmCFaVeoIs2jtJwzynu1YclT7}{Lxiv[]/\\()|?*r^<>+;~!=\",_-'  ";
-  unsigned long h = h2 / 2;
+  unsigned long w = width;
+  unsigned long h = height/2;
   unsigned long rw = width / w;
   unsigned long rh = height / h;
   unsigned char r, g, b;
@@ -87,7 +88,9 @@ void printArt(unsigned char* img, unsigned long width, unsigned long height, uns
       rect.h = rh;
       
       calcWeit(img, width * 4, rect, r, g, b);
+
       weit = ((float)(r + g + b)) / 3.0f / 255.0f;
+
       weit = 1-weit;
       weit = weit * weit;
       weit = 1-weit;
@@ -128,13 +131,12 @@ int main(int argc, char** argv) {
     h = atoi(argv[3]);
     scaley = ((float)h)/image->height;
   }
-   
   // Rasterize
   unsigned char* img = new unsigned char[w*h*4];
   NSVGrasterizer* rast = nsvgCreateRasterizer();
   nsvgRasterizeStretched(rast, image, 0,0,scalex, scaley, img, w, h, w*4);
   nsvgDeleteRasterizer(rast);
-  printArt(img, image->width * scalex, image->height * scaley, w, h);
+  printArt(img, image->width * scalex, image->height * scaley);
   delete[] img;
   return 0;
 }
