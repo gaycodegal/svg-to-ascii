@@ -104,7 +104,7 @@ int main(int argc, char** argv) {
   struct NSVGimage* image;
   unsigned long w, h;
   if (argc < 2) {
-    printf("Usage: %s <svg> [<width> [<height>]]\n", argv[0]);
+    printf("Usage: %s <svg filename> [<width> [<height>]]\n", argv[0]);
     return 1;
   }
   image = nsvgParseFromFile(argv[1], "px", 96);

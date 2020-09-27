@@ -2,7 +2,7 @@
 
 ## Use
 
-    ./svg-to-ascii <path to svg> <width> <height>
+    ./svg-to-ascii <svg filename> [<width> [<height>]]
 
 ## Build
 
