@@ -1,5 +1,9 @@
 # SVG to ASCII
 
+## Use
+
+    ./svg-to-ascii <path to svg> <width> <height>
+
 ## Build
 
 Build it using bazel.build
