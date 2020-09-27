@@ -103,6 +103,7 @@ void printArt(unsigned char* img, unsigned long width, unsigned long height, uns
 int main(int argc, char** argv) {
   struct NSVGimage* image;
   unsigned long w, h;
+  float scalex, scaley;
   if (argc < 2) {
     printf("Usage: %s <svg filename> [<width> [<height>]]\n", argv[0]);
     return 1;
@@ -112,21 +113,24 @@ int main(int argc, char** argv) {
     printf("Error loading image %s\n", argv[1]);
     return 1;
   }
+  
   if (argc < 3) {
     w = image->width;
   } else {
     w = atoi(argv[2]);
   }
+  scalex = ((float)w)/image->width;
+  
   if (argc < 4) {
-    h = image->height;
+    scaley = scalex;
+    h = scaley*image->height;
   } else {
     h = atoi(argv[3]);
+    scaley = ((float)h)/image->height;
   }
    
-  unsigned char* img = new unsigned char[w*h*4];
   // Rasterize
-  float scalex = ((float)w)/image->width;
-  float scaley = ((float)h)/image->height;
+  unsigned char* img = new unsigned char[w*h*4];
   NSVGrasterizer* rast = nsvgCreateRasterizer();
   nsvgRasterizeStretched(rast, image, 0,0,scalex, scaley, img, w, h, w*4);
   nsvgDeleteRasterizer(rast);
