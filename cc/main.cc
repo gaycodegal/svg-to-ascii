@@ -111,7 +111,6 @@ int main(int argc, char** argv) {
     printf("Error loading image %s\n", argv[1]);
     return 1;
   }
-  printf("size: %f x %f\n", image->width, image->height);
   unsigned long w = atoi(argv[2]);
   unsigned long h = atoi(argv[3]);
   unsigned char* img = new unsigned char[w*h*4];
